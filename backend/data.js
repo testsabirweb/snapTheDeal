@@ -8,36 +8,40 @@ export default {
             price: 60,
             brand: ' Nike',
             rating: 4.5,
-            numReviews: 10
+            numReviews: 8,
+            countInStock: 20,
         },
         {
             _id: '2',
             name: 'Fit Shirt',
             category: 'Shirts',
-            image: '/images/d1.jpg',
+            image: '/images/d2.jpg',
             price: 50,
             brand: ' Nike',
             rating: 4.2,
-            numReviews: 5
+            numReviews: 8,
+            countInStock: 6,
         },
         {
             _id: '3',
             name: 'Best Pants',
             category: 'Pants',
-            image: '/images/d1.jpg',
+            image: '/images/p1.jpg',
             price: 70,
             brand: ' Nike',
             rating: 4.5,
-            numReviews: 8
+            numReviews: 5,
+            countInStock: 90,
         }, {
             _id: '4',
             name: 'Best Pants',
             category: 'Pants',
-            image: '/images/d1.jpg',
+            image: '/images/p2.jpg',
             price: 70,
             brand: ' Nike',
             rating: 4.5,
-            numReviews: 8
+            numReviews: 10,
+            countInStock: 8,
         },
     ]
 }

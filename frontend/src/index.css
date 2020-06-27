@@ -22,7 +22,7 @@ body {
 }
 .header {
   grid-area: header;
-  background-color: #0666c5;
+  background-color: #6b00b3;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
