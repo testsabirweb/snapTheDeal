@@ -10,10 +10,10 @@ function SigninScreen(props) {
     const userSignin = useSelector(state => state.userSignin);
     const { loading, userInfo, error } = userSignin;
     const dispatch = useDispatch();
-
+    const redirect = props.location.search ? props.location.search.split("=")[1] : '/';
     useEffect(() => {
         if (userInfo) {
-            props.history.push("/");
+            props.history.push(redirect);
         }
         return () => {
             //
@@ -38,7 +38,7 @@ function SigninScreen(props) {
                 <li>
                     <label htmlFor="email">
                         Email
-          </label>
+                    </label>
                     <input type="email" name="email" id="email" onChange={(e) => setEmail(e.target.value)}>
                     </input>
                 </li>
@@ -52,9 +52,9 @@ function SigninScreen(props) {
                 </li>
                 <li>
                     New to SnapTheDeal?
-        </li>
+                </li>
                 <li>
-                    <Link to="/register" className="button secondary text-center" >Create your SnapTheDeal account</Link>
+                    <Link to={redirect === "/" ? "register" : "register?redirect=" + redirect} className="button secondary text-center" >Create your SnapTheDeal account</Link>
                 </li>
             </ul>
         </form>
